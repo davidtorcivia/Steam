@@ -20,9 +20,9 @@
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
-    {{> theme-green}}
+    {{!> theme-green}}
     {{!> theme-blue}}
-    {{!> theme-red}}
+    {{> theme-red}}
     {{!> theme-orange}}
     {{!> theme-customcolor}}
     
@@ -37,6 +37,7 @@
 
     {{ghost_head}}
 </head>
+<div id="top"></div>
 <body class="{{body_class}}">
 
     <header id="site-head">
@@ -44,7 +45,7 @@
         <h1 class="blog-subtitle">{{@blog.description}}</h1>
     </header>
 
-    {{!navigation}}
+    {{navigation}}
 
     {{{body}}}
 
@@ -52,8 +53,7 @@
         <div class="inner">
             {{> footer-social}}
             {{> footer-author}}
-            <section class="copyright">&copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>. All rights reserved</section>
-            <section><a href="https://github.com/epistrephein/Steam">Steam theme</a> for <a class="icon-ghost" href="http://ghost.org/"><span class="hidden">Ghost</span></a> by Tommaso Barbato</section>
+            <section class="copyright">&copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>.</section>
         </div>
     </footer>
 
