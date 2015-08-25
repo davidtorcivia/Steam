@@ -89,7 +89,7 @@ p,
 li,
 dt,
 dd {
-  font-size: 1.25em;
+  font-size: 20px;
   font-weight: 100;
   line-height: 1.55em;
 }
@@ -267,14 +267,14 @@ section.author p.bio {
 }
 blockquote {
   font-family: Vollkorn, serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 300;
   line-height: 1.2em;
   font-style: italic;
   text-transform: uppercase;
   border-left: 0.4em solid rgba(0, 0, 0, 0.05);
   margin-left: 1em;
-  padding-right: 1.5em;
+  padding-right: 1.4em;
   padding-left: 1em;
 }
 .post-meta {
@@ -599,9 +599,7 @@ section.post-content h4 {
 }
 section.post-content h4 {
   font-family: Vollkorn, serif;
-  font-size: 23px;
-  text-transform: uppercase;
-  font-weight: 300;
+  font-size: 1.1em;
 }
 
 a, a:active, a:focus {
