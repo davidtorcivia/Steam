@@ -18,7 +18,12 @@
 
     {{> favicon-appletouchicon}}
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+    <link rel="stylesheet" href="{{asset "css/normalize.min.css"}}">
+	
+	<!-- IndieShare-->
+	<script type="text/javascript" src="{{asset "js/indiesocial.min.js"}}"></script>
+	<link rel="stylesheet" href="{{asset "css/fontello.css"}}"><!--[if IE 7]>
+    <link rel="stylesheet" href="{{asset "css/fontello-ie7.css"}}"><![endif]-->
 
     {{!> theme-green}}
     {{!> theme-blue}}
@@ -30,12 +35,32 @@
     {{!> google-analytics}}
 
     <link rel="stylesheet" href="{{asset "css/screen.css"}}">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+    <link rel="stylesheet" href="{{asset "css/default.min.css"}}">
     <link rel="stylesheet" href="{{asset "css/github.css"}}">
 
     {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch">{{/if}}
 
     {{ghost_head}}
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#993335">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#993335">
+	
 </head>
 <div id="top"></div>
 <body class="{{body_class}}">
@@ -61,7 +86,7 @@
 
     <script src="{{asset "js/index.js"}}"></script>
     <script src="{{asset "js/smooth-scroll.min.js"}}"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+    <script src="{{asset "js/highlight.min.js"}}"></script>
 
     <script>
         smoothScroll.init({

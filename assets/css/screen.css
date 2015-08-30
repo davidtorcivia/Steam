@@ -42,6 +42,10 @@
 	<style>#top { display: none; }</style>
 <![endif]-->
 
+#indiesocial-init {
+  width: 100px;
+  height: 10px;
+  }
 
 
 
@@ -245,14 +249,14 @@ section.author h4 {
 }
 section.author p.attr,
 section.share p.info {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   font-family: "Unica One", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 section.share p.info.prompt {
-  top: -5px;
+  top: 2px;
   position: relative;
 }
 section.author p.attr {
